@@ -15,14 +15,19 @@
     type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
   ></script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en'
-        }, 'google_translate_element');
-      }
-    </script>
-  
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'it',
+          includedLanguages: 'ru,ko,zh-CN,zh-TW,fr',
+          gaTrack: true,
+          gaId: 'UA-XXXXXXXX-X'
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
 
     <script type="module" crossorigin src="/assets/index-rJeZlYWn.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-D4amZeFM.css">
